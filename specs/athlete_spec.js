@@ -19,4 +19,10 @@ describe('athlete', function () {
     assert.strictEqual(athlete.distanceCovered, 0);
   });
 
+  it('should be able to run increasing distance, decreasing hydration', function () {
+    athlete.run(10);
+    assert.strictEqual(athlete.hydration, 90);
+    assert.strictEqual(athlete.distanceCovered, 10);
+  });
+
 });
