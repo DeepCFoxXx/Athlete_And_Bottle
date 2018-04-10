@@ -15,4 +15,8 @@ describe('athlete', function () {
     assert.strictEqual(athlete.hydration, 100);
   });
 
+  it('should have a distance covered attribute starts at 0', function () {
+    assert.strictEqual(athlete.distanceCovered, 0);
+  });
+
 });
