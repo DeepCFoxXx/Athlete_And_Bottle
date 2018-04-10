@@ -25,4 +25,10 @@ describe('athlete', function () {
     assert.strictEqual(athlete.distanceCovered, 10);
   });
 
+  it('should not go below 0 hydration', function () {
+    athlete.hydration = 2;
+    athlete.dehydrate();
+    assert.strictEqual(athlete.hydration, 0);
+  });
+
 });
