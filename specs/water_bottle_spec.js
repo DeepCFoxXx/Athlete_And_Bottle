@@ -21,4 +21,11 @@ describe('WaterBottle', function () {
     assert.strictEqual(bottle.volume, 100);
   });
 
+  it('should decrease by 10 when drank', function() {
+    bottle.fill();
+    var startValue = bottle.volume;
+    bottle.drink();
+    assert.strictEqual(bottle.volume, startValue - 10);
+  });
+
 });
