@@ -33,4 +33,10 @@ describe('WaterBottle', function () {
     assert.strictEqual(bottle.volume, 0);
   });
 
+  it('should not decrement volume below 0', function () {
+    bottle.empty();
+    bottle.drink();
+    assert.strictEqual(bottle.volume, 0);
+  });
+
 });
