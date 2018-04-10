@@ -31,4 +31,11 @@ describe('athlete', function () {
     assert.strictEqual(athlete.hydration, 0);
   });
 
+  it('should not move when running dehydrated hydration at 0', function () {
+    athlete.hydration = 0;
+    athlete.run(10);
+    assert.strictEqual(athlete.hydration, 0);
+    assert.strictEqual(athlete.distanceCovered, 0);
+  });
+
 });
