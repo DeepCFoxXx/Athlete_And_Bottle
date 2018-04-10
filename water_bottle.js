@@ -17,4 +17,8 @@ WaterBottle.prototype.drink = function() {
   return this.hydrationValue;
 }
 
+WaterBottle.prototype.empty = function() {
+  this.volume = 0;
+}
+
 module.exports = WaterBottle;

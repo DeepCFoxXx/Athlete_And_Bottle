@@ -28,4 +28,9 @@ describe('WaterBottle', function () {
     assert.strictEqual(bottle.volume, startValue - 10);
   });
 
+  it('should have a volume of 0 when emptied', function() {
+    bottle.empty();
+    assert.strictEqual(bottle.volume, 0);
+  });
+
 });
