@@ -44,4 +44,9 @@ describe('WaterBottle', function () {
     assert.strictEqual(bottle.drink(), 10);
   });
 
+  it('should return the small value', function () {
+    bottle.volume = 5;
+    assert.strictEqual(bottle.drink(), 5);
+  });
+
 });
