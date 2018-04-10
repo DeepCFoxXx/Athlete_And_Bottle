@@ -1,0 +1,14 @@
+{
+  "name": "athlete_and_bottle",
+  "version": "1.0.0",
+  "description": "",
+  "main": "athlete.js",
+  "scripts": {
+    "test": "mocha specs"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "mocha": "^5.0.5"
+  }
+}
