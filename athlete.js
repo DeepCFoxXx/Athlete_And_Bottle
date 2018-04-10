@@ -22,4 +22,8 @@ Athlete.prototype.dehydrate = function() {
   }
 }
 
+Athlete.prototype.drink = function(bottle) {
+  this.hydration += bottle.drink();
+}
+
 module.exports = Athlete;
