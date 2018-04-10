@@ -16,4 +16,9 @@ describe('WaterBottle', function () {
     assert.strictEqual(bottle.hydrationValue, 10);
   });
 
+  it('should have a volume of 100 when filled', function() {
+    bottle.fill();
+    assert.strictEqual(bottle.volume, 100);
+  });
+
 });

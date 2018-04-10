@@ -3,4 +3,9 @@ var WaterBottle = function () {
   this.hydrationValue = 10;
 }
 
+WaterBottle.prototype.fill = function() {
+  this.volume = 100;
+}
+
+
 module.exports = WaterBottle;
