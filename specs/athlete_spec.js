@@ -38,4 +38,11 @@ describe('athlete', function () {
     assert.strictEqual(athlete.distanceCovered, 0);
   });
 
+  it('should be able to increase hydration by drinking from water bottle', function () {
+    athlete.hydration = 0;
+    bottle.fill();
+    athlete.drink(bottle);
+    assert.strictEqual(athlete.hydration, 10);
+  });
+
 });
