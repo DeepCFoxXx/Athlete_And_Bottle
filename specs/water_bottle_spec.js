@@ -39,4 +39,9 @@ describe('WaterBottle', function () {
     assert.strictEqual(bottle.volume, 0);
   });
 
+  it('should return hydration value when drink 0', function () {
+    bottle.fill();
+    assert.strictEqual(bottle.drink(), 10);
+  });
+
 });
